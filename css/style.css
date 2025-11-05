@@ -2390,6 +2390,7 @@ p + .list-marked {
 		break-inside: avoid;
 		-moz-column-gap: 28px;
 		-webkit-column-gap: 28px;
+		column-gap: 28px;
 	}
 	.list-custom li {
 		display: inline-block;
@@ -2435,6 +2436,7 @@ p + .list-custom {
 		break-inside: avoid;
 		-moz-column-gap: 30px;
 		-webkit-column-gap: 30px;
+		column-gap: 30px;
 	}
 }
 
@@ -2550,7 +2552,6 @@ img {
 	display: inline-block;
 	font-weight: 400;
 	font-style: normal;
-	speak: none;
 	text-transform: none;
 }
 
@@ -4500,6 +4501,7 @@ input:-webkit-autofill ~ .form-validation {
 	-webkit-appearance: none;
 	transition: .3s ease-in-out;
 	border: 1px solid #f7f7f7;
+	appearance: none;
 }
 
 .form-input:focus {
@@ -4792,6 +4794,7 @@ textarea.textarea-lg {
 .toggle-custom {
 	padding-left: 60px;
 	-webkit-appearance: none;
+	appearance: none;
 }
 
 .toggle-custom:checked ~ .checkbox-custom-dummy::after {
@@ -6482,6 +6485,7 @@ textarea.textarea-lg {
 	transform-origin: 100% 100%;
 	-webkit-transform-origin: 100% 100%;
 	z-index: 1;
+	transform: skew(-45deg);
 }
 
 .ie-10 .quote-nancy-figure::before,
@@ -7745,13 +7749,20 @@ textarea.textarea-lg {
 		padding: 30px 20px;
 	}
 }
-
-.thumbnail-info .thumbnail-info-figure .counter, .thumbnail-info .thumbnail-info-figure .symbol {
-	font-size: 36px;
-	line-height: 1.1;
-	font-weight: 700;
-	margin-bottom: 5px;
+.counter-classic-number {
+	display: inline-flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 2px;
 }
+
+.counter-classic-number .counter, .counter-classic-number .symbol {
+	font: 36px;
+	line-height: 1;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
 
 @media (min-width: 576px) {
 	.thumbnail-info .thumbnail-info-figure .counter, .thumbnail-info .thumbnail-info-figure .symbol {
@@ -8042,7 +8053,7 @@ textarea.textarea-lg {
 }
 
 .snackbars-right {
-	display: inline-block;
+	display: block;
 	float: right;
 	text-transform: uppercase;
 }
@@ -8780,6 +8791,7 @@ textarea.textarea-lg {
 .footer-corporate-2 .list-custom-2 {
 	-moz-column-gap: 20px;
 	-webkit-column-gap: 20px;
+	column-gap: 20px;
 }
 
 @media (min-width: 992px) {
@@ -11543,6 +11555,7 @@ html.boxed body {
 		-webkit-background-clip: text;
 		background-position-y: 40%;
 		animation: imgPos 5s linear normal infinite paused;
+		background-clip: text;
 	}
 	.text-img > span {
 		pointer-events: none;
@@ -13757,6 +13770,7 @@ html.tablet .ui-to-top {
 	outline-offset: 0;
 	cursor: pointer;
 	-webkit-appearance: none;
+	appearance: none;
 }
 
 .rd-navbar-search-toggle::-moz-focus-inner {
@@ -13973,6 +13987,7 @@ html.tablet .ui-to-top {
 	-moz-column-gap: 30px;
 	-webkit-column-gap: 30px;
 	margin-bottom: -8px;
+	column-gap: 30px;
 }
 
 .rd-navbar-static .rd-megamenu-list li {
@@ -18856,6 +18871,7 @@ html.rd-navbar-fixed-linked .page {
 	color: #cccccc;
 	font-size: 0;
 	line-height: 0;
+	appearance: none;
 }
 
 .rd-search-classic .rd-search-submit::-moz-focus-inner {
@@ -20950,6 +20966,7 @@ h1 + .tabs-line {
 .owl-carousel .owl-stage {
 	position: relative;
 	-ms-touch-action: pan-Y;
+	touch-action: pan-Y;
 }
 
 .owl-carousel .owl-stage:after {
@@ -20966,6 +20983,7 @@ h1 + .tabs-line {
 	overflow: hidden;
 	/* fix for flashing background */
 	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -21696,7 +21714,6 @@ h1 + .tabs-line {
 
 .lg-icon {
 	font-family: lg;
-	speak: none;
 	font-style: normal;
 	font-weight: 400;
 	font-variant: normal;
@@ -23243,6 +23260,7 @@ disabled look for disabled choices in the results dropdown
 	margin-top: 16px;
 	display: flex;
 	-webkit-align-items: center;
+	align-items: center;
 }
 
 .rd-range__wrap {
@@ -23754,6 +23772,7 @@ disabled look for disabled choices in the results dropdown
 	font-family: "Montserrat", sans-serif, Arial, sans-serif;
 	text-align: center;
 	-moz-appearance: textfield;
+	appearance: textfield;
 }
 
 .stepper input[type=number]::-webkit-inner-spin-button {
@@ -23877,6 +23896,7 @@ disabled look for disabled choices in the results dropdown
 	position: fixed;
 	outline: none !important;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -24001,6 +24021,7 @@ button.mfp-close, button.mfp-arrow {
 	z-index: 1046;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	appearance: none;
 }
 
 button::-moz-focus-inner {
@@ -24419,6 +24440,7 @@ img.mfp-img {
 	overflow: hidden;
 	position: relative;
 	-moz-user-select: none;
+	user-select: none;
 }
 
 .twentytwenty-container img {
@@ -24698,4 +24720,96 @@ section > div {
 .thumbnail-mary {
   flex: 1 1 300px; /* flexible width, min 300px */
   max-width: 420px;
+}
+
+/* Fix testimonial (quote-lisa) carousel size */
+.quote-lisa {
+  max-width: 600px;          /* limits the width */
+  margin: 0 auto;            /* centers the testimonials */
+}
+
+.quote-lisa-body {
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.quote-lisa .img-circles {
+  width: 80px !important;    /* smaller image size */
+  height: 80px !important;
+  object-fit: cover;
+}
+
+.quote-lisa-text p.q {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.quote-lisa-cite {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.quote-lisa-status {
+  font-size: 14px;
+  color: #777;
+  margin-top: -5px;
+}
+
+/* Optional: reduce spacing between carousel items */
+.owl-carousel.owl-modern .owl-stage-outer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Fix size and centering for testimonial cards */
+.section-last .owl-carousel .quote-lisa {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 40px 50px;
+  text-align: center;
+}
+
+/* Center and resize profile image */
+.section-last .quote-lisa-figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-last .quote-lisa .img-circles {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Quote text formatting */
+.section-last .quote-lisa-text p.q {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Name and role */
+.section-last .quote-lisa-cite {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section-last .quote-lisa-status {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Carousel dot alignment fix */
+.section-last .owl-dots {
+  margin-top: 15px;
+  text-align: center;
 }
