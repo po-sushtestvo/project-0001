@@ -12,6 +12,44 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .thumbnail-mary {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .thumbnail-mary-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .thumbnail-mary-caption {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .thumbnail-mary-caption .icon {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .thumbnail-mary:hover .thumbnail-mary-caption {
+      opacity: 1;
+    }
+
+    .thumbnail-mary:hover img {
+      transform: scale(1.05);
+    }
+    </style>
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -192,9 +230,11 @@
           <div class="owl-item">
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="images/pk_italia.png" alt="" width="420" height="308"/>
+              <div class="thumbnail-mary-figure">
+                <img src="images/pk_italia.png" alt="Италия">
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/pk_italia1.png" data-lightgallery="item"><img src="images/pk_italia.png" alt="" width="420" height="308"/></a>
+              <div class="thumbnail-mary-caption">
+                <a class="icon fl-bigmug-line-zoom60" href="images/pk_italia1.png" data-lightgallery="item"></a>
               </div>
             </article>
             <div class="thumbnail-mary-description">
@@ -206,9 +246,11 @@
           <div class="owl-item">
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="images/pk_gurciq.png" alt="" width="420" height="308"/>
+              <div class="thumbnail-mary-figure">
+                <img src="images/pk_gurciq.png" alt="Гърция">
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/pk_gurciq2.png" data-lightgallery="item"><img src="images/pk_gurciq.png" alt="" width="420" height="308"/></a>
+              <div class="thumbnail-mary-caption">
+                <a class="icon fl-bigmug-line-zoom60" href="images/pk_gurciq2.png" data-lightgallery="item"></a>
               </div>
             </article>
             <div class="thumbnail-mary-description">
@@ -220,9 +262,11 @@
           <div class="owl-item">
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="images/pk_surbiq.png" alt="" width="420" height="308"/>
+              <div class="thumbnail-mary-figure">
+                <img src="images/pk_surbiq.png" alt="Сърбия">
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/pk_surbiq1.png" data-lightgallery="item"><img src="images/pk_surbiq.png" alt="" width="420" height="308"/></a>
+              <div class="thumbnail-mary-caption">
+                <a class="icon fl-bigmug-line-zoom60" href="images/pk_surbiq1.png" data-lightgallery="item"></a>
               </div>
             </article>
             <div class="thumbnail-mary-description">
@@ -234,9 +278,11 @@
           <div class="owl-item">
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="images/pk_turciq.png" alt="" width="420" height="308"/>
+              <div class="thumbnail-mary-figure">
+                <img src="images/pk_turciq.png" alt="Турция">
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/pk_turciq1.png" data-lightgallery="item"><img src="images/pk_turciq.png" alt="" width="420" height="308"/></a>
+              <div class="thumbnail-mary-caption">
+                <a class="icon fl-bigmug-line-zoom60" href="images/pk_turciq1.png" data-lightgallery="item"></a>
               </div>
             </article>
             <div class="thumbnail-mary-description">
@@ -248,9 +294,11 @@
           <div class="owl-item">
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="images/pk_rumuniq.png" alt="" width="420" height="308"/>
+              <div class="thumbnail-mary-figure">
+                <img src="images/pk_rumuniq.png" alt="Румъния">
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/pk_rumuniq1.png" data-lightgallery="item"><img src="images/pk_rumuniq.png" alt="" width="420" height="308"/></a>
+              <div class="thumbnail-mary-caption">
+                <a class="icon fl-bigmug-line-zoom60" href="images/pk_rumuniq1.png" data-lightgallery="item"></a>
               </div>
             </article>
             <div class="thumbnail-mary-description">
