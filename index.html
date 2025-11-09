@@ -12,7 +12,42 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <style>
+      .ie-panel{
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+        clear: both;
+        text-align:center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel { display: block; }
+
+      /* Center the "Ръководители" title above the four profiles */
+      .title-block.find-car { text-align: center !important; }
+      .title-block.find-car .d-inline-block { display: inline-block !important; margin: 0 auto !important; }
+
+      /* Force Swiper pagination bullets to be simple dots and remove any thumbnail images */
+      .swiper-pagination { display: flex; justify-content: center; }
+      .swiper-pagination .swiper-pagination-bullet {
+        background-image: none !important;
+        background: rgba(255,255,255,0.9) !important;
+        width: 12px !important;
+        height: 12px !important;
+        opacity: 1 !important;
+        border-radius: 50% !important;
+        margin: 0 6px !important;
+        box-shadow: none !important;
+      }
+      .swiper-pagination .swiper-pagination-bullet-active {
+        background: #01b3a7 !important;
+        transform: scale(1.2);
+      }
+      /* Hide any images that might be injected into pagination bullets by other scripts */
+      .swiper-pagination img { display: none !important; }
+    </style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -127,39 +162,6 @@
         </div>
         <!-- Swiper Pagination-->
         <div class="swiper-pagination"></div>
-      </section>
-      <!-- Section Box Categories-->
-      <section class="section section-lg section-top-1 bg-gray-4">
-        <div class="container offset-negative-1">
-          <div class="box-categories cta-box-wrap">
-            <div class="box-categories-content">
-              <div class="row justify-content-center">
-                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                  <ul class="list-marked-2 box-categories-list">
-                    <li><a href="#"><img src="images/cta-1-368x420.jpg" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title">За хляба наш... <br>| Място - 2025</h5>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                  <ul class="list-marked-2 box-categories-list">
-                    <li><a href="#"><img src="images/cta-2-368x420.jpg" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title">За хляба наш... <br>| Място - 2024</h5>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                  <ul class="list-marked-2 box-categories-list">
-                    <li><a href="#"><img src="images/cta-3-368x420.jpg" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title">Южни Слънца <br>Гранд При - 2024</h5>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div><a class="link-classic wow fadeInUp" href="#">Още награди<span></span></a>
-          <!-- Owl Carousel-->
-        </div>
       </section>
       <!-- Discover New Horizons-->
       <section class="section section-sm section-first bg-default text-md-left">
