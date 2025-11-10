@@ -1,0 +1,114 @@
+/* Reset and override all testimonial styles */
+.quote-lisa {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    max-width: 800px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.quote-lisa::before,
+.quote-lisa::after,
+.quote-lisa-body::before,
+.quote-lisa-body::after,
+.quote-lisa-text::before,
+.quote-lisa-text::after {
+    display: none !important;
+}
+
+.quote-lisa-body {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    margin: 1rem auto;
+    max-width: 90%;
+}
+
+.quote-lisa-figure {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.quote-lisa-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.quote-lisa-cite {
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.quote-lisa-status {
+    color: #777;
+    font-style: italic;
+}
+
+/* Owl Carousel Navigation */
+.owl-modern {
+    padding: 0 50px;
+}
+
+.owl-modern .owl-nav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.owl-modern .owl-nav button.owl-prev,
+.owl-modern .owl-nav button.owl-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-modern .owl-nav button.owl-prev {
+    left: -50px;
+}
+
+.owl-modern .owl-nav button.owl-next {
+    right: -50px;
+}
+
+.owl-modern .owl-nav button span {
+    display: block;
+    line-height: 36px;
+}
+
+.owl-modern .owl-dots {
+    margin-top: 20px;
+}
+
+/* Remove any unwanted borders or lines */
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+    border: none !important;
+}
+
+.owl-item::before,
+.owl-item::after {
+    display: none !important;
+}

@@ -12,7 +12,65 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <style>
+      .ie-panel{
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+        clear: both;
+        text-align:center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+
+      /* Only size changes for the three contact rectangles (no animation changes) */
+      .box-contacts {
+        min-height: 280px; /* increased, equal height for all three rectangles */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      .box-contacts-body {
+        width: 100%;
+        padding: 28px 24px; /* keep content spaced inside the rectangle */
+        text-align: center;
+      }
+
+      .box-contacts-icon {
+        font-size: 88px; /* slightly larger icon, equal for all three */
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        margin: 0 auto 16px;
+        display: block;
+        color: #01b3a7;
+      }
+
+      /* Ensure text wraps and doesn't overflow */
+      .box-contacts-link a {
+        display: block;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      @media (max-width: 767px) {
+        .box-contacts { min-height: 220px; }
+        .box-contacts-icon {
+          font-size: 64px;
+          width: 88px;
+          height: 88px;
+          line-height: 88px;
+        }
+        .box-contacts-body { padding: 18px; }
+      }
+    </style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>

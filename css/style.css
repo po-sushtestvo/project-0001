@@ -12831,10 +12831,6 @@ html [class*='section-'].section-top-0 {
 	background: rgba(43, 49, 59, 0.33);
 }
 
-.bg-overlay-26::before {
-	background: rgba(43, 49, 59, 0.26);
-}
-
 .bg-overlay-24::before {
 	background: rgba(43, 49, 59, 0.24);
 }
