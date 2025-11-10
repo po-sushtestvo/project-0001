@@ -21343,7 +21343,6 @@ h1 + .tabs-line {
 
 .owl-modern .owl-stage-outer::before, .owl-modern .owl-stage-outer::after {
 	position: absolute;
-	content: '';
 }
 
 .owl-modern .owl-stage-outer::before {
@@ -24808,4 +24807,70 @@ section > div {
 .section-last .owl-dots {
   margin-top: 15px;
   text-align: center;
+}
+
+
+.title-block.find-car {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin-bottom: 30px !important;  /* space between title and boxes */
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Make the inner span a block so it sits on its own line */
+.title-block.find-car .d-inline-block {
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Center testimonial avatar + keep quote centered */
+.quote-lisa-body {
+  display: flex;
+  flex-direction: column;    /* stack avatar → text → cite vertically */
+  align-items: center;       /* center avatar and cite horizontally */
+  text-align: center;        /* center the quote text lines */
+}
+
+/* covers both cases: when avatar was wrapped in .quote-lisa-figure or is a direct <img> */
+.quote-lisa-body .quote-lisa-figure,
+.quote-lisa-body .quote-lisa-figure img,
+.quote-lisa-body > img.img-circles {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* small spacing under avatar */
+.quote-lisa-body .quote-lisa-figure,
+.quote-lisa-body > img.img-circles {
+  margin-bottom: 18px;
+}
+
+/* keep the quote text from stretching too wide */
+.quote-lisa-text {
+  max-width: 760px;   /* adjust as needed */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ensure the cite and status also centered */
+.quote-lisa-cite,
+.quote-lisa-status {
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Remove the gray decorative lines below the "Какво казват хората" heading */
+.testimonials-section h3::before,
+.testimonials-section h3::after,
+.testimonials-section.section-last::before,
+.testimonials-section.section-last::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
